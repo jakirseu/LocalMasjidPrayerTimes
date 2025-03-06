@@ -51,8 +51,9 @@ class _PrayerTimesScreenState extends State<PrayerTimesScreen> {
 
     try {
       // use this to load json data from assets folder. 
-      // final data = await _networkService.fetchPrayerDataLocal();
-      final data = await _networkService.fetchPrayerData();
+       final data = await _networkService.fetchPrayerDataLocal();
+       // use this to load Jamat data from url
+      //final data = await _networkService.fetchPrayerData();
       setState(() {
         prayerData = data;
         isLoading = false;
@@ -112,7 +113,7 @@ class _PrayerTimesScreenState extends State<PrayerTimesScreen> {
        
                     ElevatedButton(
                       onPressed: syncJamatData,
-                      child: Text('Sync Jamat Time'),
+                      child: Text('Sync Jamat Times'),
                     ),
                     PrayerTimeCard(
                       title: 'Fajr',

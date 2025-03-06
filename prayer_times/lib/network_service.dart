@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class NetworkService {
-  static const String _url = 'https://jakir.me/apps/data.json';  // Your JSON URL
+  static const String _url = 'http://localhost:8000/data.json';  // Your JSON URL
 
 final Dio _dio = Dio()..interceptors.add(LogInterceptor(responseBody: true));
 
