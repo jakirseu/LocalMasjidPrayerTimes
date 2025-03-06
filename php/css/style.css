@@ -1,0 +1,38 @@
+.header-bg {
+    position: relative;
+    background-image: url('BaitulMukarram.jpg'); /*  taken from wikipedia */
+    background-size: cover;
+    background-position: center;
+    height: 350px;  
+    color: white;
+    text-align: center;
+    padding: 0; 
+}
+
+.bg-text {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background-color: rgba(0, 0, 0, 0.6);  
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+    text-align: center;
+}
+.header-bg h1 {
+    font-size: 3rem;
+}
+
+ 
+
+
+/* Card styling */
+.card {
+    margin-bottom: 20px;
+}

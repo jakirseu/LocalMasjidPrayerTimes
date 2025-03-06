@@ -1,0 +1,5 @@
+{
+    "require": {
+        "islamic-network/prayer-times": "^1.0"
+    }
+}
