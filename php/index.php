@@ -13,7 +13,8 @@ $longitude = isset($jamatData['longitude']) ? $jamatData['longitude'] : 90.41283
 $timezone = 'Asia/Dhaka'; // Timezone
 
 // Initialize PrayerTimes
-$pt = new PrayerTimes('KARACHI');
+$pt = new PrayerTimes('KARACHI', 'HANAFI');
+
 $date = new DateTime('now', new DateTimeZone($timezone)); // Corrected DateTimeZone
 $times = $pt->getTimes($date, $latitude, $longitude , null, PrayerTimes::LATITUDE_ADJUSTMENT_METHOD_ANGLE, null, PrayerTimes::TIME_FORMAT_ISO8601);
 
